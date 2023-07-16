@@ -18,7 +18,9 @@ class MyDrawer extends StatelessWidget {
                   margin: EdgeInsets.zero,
                   accountName: Text("Jay dobariya"),
                   accountEmail: Text("jaydobariya2341@gmail.com"),
-                  currentAccountPicture: Image.network(imgUrl),
+                  currentAccountPicture: CircleAvatar(
+                    backgroundImage: NetworkImage(imgUrl),
+                  ),
                 )),
             ListTile(
               leading: Icon(
@@ -38,6 +40,17 @@ class MyDrawer extends StatelessWidget {
               ),
               title: Text(
                 "Profile",
+                style: TextStyle(color: Colors.white),
+                textScaleFactor: 1.2,
+              ),
+            ),
+            ListTile(
+              leading: Icon(
+                CupertinoIcons.mail,
+                color: Colors.white,
+              ),
+              title: Text(
+                "Email",
                 style: TextStyle(color: Colors.white),
                 textScaleFactor: 1.2,
               ),
