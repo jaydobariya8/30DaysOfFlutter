@@ -22,5 +22,5 @@ final Products = [
       desc: "Apple Iphone 14th gen",
       price: 999,
       color: "33505a",
-      image: "sdkjfhskdjfb"),
+      image: "/imgage"),
 ];
